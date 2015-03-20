@@ -1,0 +1,91 @@
+.zaglavlje {
+	font-family: Arial;
+    background-color:#0066CC;
+    color:white;
+    text-align:center;
+    padding:5px;
+	}
+
+.navigacija {
+	font-family: Arial;
+	font-size: 25px;
+	font-style: italic;
+    background-color:#4791DA;
+    text-align:center;
+    padding:5px;
+	}
+.navigacija a{
+    color:white;
+	}
+
+.navigacija a:hover{
+    background-color:#0000CC;
+	}
+
+.novosti {
+    width:700px;
+    margin: 5px;
+	}
+
+.novosti a {
+    color:white;
+	font-style: italic;
+	}
+
+.novosti img {
+    width: 180px;
+	height:140px;
+	}
+
+.novosti p {
+	text-align: justify;
+	font-size: 16px;
+	color: black; 
+	}
+
+.podnozje {
+    background-color:#0066CC;
+    color:white;
+    text-align:center;
+    padding:5px;
+	}
+	
+.naslovtabele{
+	font-family: Arial;
+	font-size: 18px;
+	font-style: italic;
+    text-align:left;
+    padding:15px;
+	}
+	
+.ikona li {
+    list-style-image: url(slike/ikona.png);
+}
+
+.ikona a {
+    list-style-image: url(slike/ikona.png);
+	font-size: 18px;
+	color:blue;
+}
+
+body {
+	background-color: #AEC2FF;						/* boja pozadine stranice*/
+	/*background-image: url("slike/p1.jpg");		/* slika pozadine stranice*/
+	}
+
+table, th, td {
+	font-family: Arial;
+    border: 1px solid black;		/* Debljina i boja linija za navedene tagove */
+	/*width:70%;					/* Postavljanje prikaza sirine tabele na 70% velicine prostora u kome se prikazuje */
+	}
+
+th{
+	background-color: #0066CC;
+	color: white;
+    padding: 15px;					/* top i bottom razmak u th tag-u koji predstavlja naziv kolone */
+	}
+
+td{
+	text-align:center;				/* poravnanje teskta u td tag-u */
+	padding: 5px;					/* top i bottom razmak u td tag-u kome se nalaze podaci */
+	}
