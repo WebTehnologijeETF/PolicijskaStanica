@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stil_stranice.css">
+  <title>Policijska stanica</title>
+</head>
+
+<body>
+
+<!-- Logo i naziv zaglavlje-->
+<div class="zaglavlje">
+  <img src="slike/logo.png" alt="logo" />
+  <h1>Policijska stanica KS</h1>
+</div>
+
+<!-- Navigacioni meni -->
+<div class="navigacija">
+  <a href="naslovna.html">Naslovna</a>
+  <a href="statistika.html">Statistika</a>
+  <a href="linkovi.html">Linkovi</a>
+  <a href="Kontakt.html">Kontakt</a>
+</div>
+
+<!-- Novosti -->
+<div class="novosti">
+<h1>Rasvjetljeno krivično djelo oštećenje tuđe stvari</h1>
+
+<h4>Datum objave 17.03.2015 Autor posta: Mujo Mujić</h4>
+
+<p><img src="slike/pneumatik.jpg" alt="Alternativa">Radeći na rasvjetljavnju krivičnog djela oštećenja tuđe stvari, bušenja pneumatika na 33 parkirana motorna vozila od 12.03.2015.godine u ulici Ismeta Mujezinovića, općina Centar Sarajevo, polcijski službenici I PU su došli do saznanja da se u vezu sa izvršenjem navedenog krivičnog djela mogu dovesti mldb. B.A., rođen 1997.godine i mldb. S.J., rođen 1997.godine, nastanjeni u Sarajevu. Dana 16.03.2015.godine, u pratnji staratelja i advokata za maloljetnike, od strane certificiranog policijskog službenika, na okolnosti izvršenja krivičnih djela ispitan je mldb. <a href="">Detaljnije...</a></p>
+</div>
+
+<div class="novosti">
+<h1>Pronalazak oružja i drugih predmeta</h1>
+
+<h4>Datum objave 17.03.2015 Autor posta: Mujo Mujić</h4>
+
+<p><img src="slike/oruzje.jpg" alt="Alternativa">Na osnovu prikupljenih operativnih saznanja, dana 16.03.2015.godine, policijski službenici V PU su uz saglasnost tužioca Kantonalnog tužilaštva u Sarajevu, zatražili od sudije za prethodni postupak Općinskog suda u Sarajevu, Naredu za pretres putničkog motornog vozila marke “Audi A4”, nepoznatog vlasnika, zbog sumnje da se u istom nalazi veća količina oružja. Prilikom pretresa vozila pronađeni su sljedeći predmeti:
+- 2 para registarskih tablica,
+- 3 ručne bombe,
+- jedan ručni bacač - zolja,
+- 2 automatske puške. <a href="">Detaljnije...</a></p>
+</div>
+
+<div class="novosti">
+<h1>Održana press-konferencija Sindikata MUP-a Kantona Sarajevo</h1>
+
+<h4>Datum objave 10.03.2015 Autor posta: Mujo Mujić</h4>
+
+<p><img src="slike/press.jpg" alt="Alternativa">Dana 10.03.2015.godine oko 01,30 sati, od strane građana obaviještena je V PU da je u ulici Nova cesta, općina Vogošća, od strane NN lica, izvršeno krivično djelo razbojništva nad radnicima na benzinskoj pumpi “Energopetrol”. Tom prilikom NN lice je, uz prijetnju nožem, otuđilo određenu sumu novca, a zatim se putničkim motornim vozilom marke “Fiat”, kojim je upravljala NN ženska osoba udaljilo u nepoznatom pravcu. <a href="">Detaljnije...</a></p>
+</div>
+
+<div class="novosti">
+<h1>Rasvjetljeno krivično djelo razbojništva</h1>
+
+<h4>Datum objave 17.03.2015 Autor posta: Mujo Mujić</h4>
+
+<p>Danas je u prostorijama Jedinice za specijalističku podršku održana press-konferencija Sindikata MUP-a Kantona Sarajevo.  Na konferenciji je pružena podrška aktuelnom ministru Nerminu Pećancu, te upućen apel političkim partijama koje formiraju vlast u Kantonu Sarajevo, da se razmotri mogućnost ostanka ministra Pećanca na ovoj funkciji, s obzirom na povjerenje i ugled koje uživa među svim uposlenicima Ministarstva, te na izuzetne rezultate  rada ostvarene u prethodnom periodu. <a href="">Detaljnije...</a></p>
+</div>
+
+<!-- Podnozje -->
+<div class="podnozje">
+<p>Copyright © Ilma Kurtović</p>
+</div>
+
+</body>
+
+</html>
