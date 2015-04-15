@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="stil_stranice.css">
-  <title>Policijska stanica</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stil_stranice.css">
+    <title>Policijska stanica</title>
 </head>
 
 <body>
-
-<!-- Logo i naziv -->
-<div class="zaglavlje">
-  <img src="slike/logo.png" alt="logo" />
-  <h1>Policijska stanica KS</h1>
-</div>
-
-<!-- Navigacioni meni -->
-<div class="navigacija">
-  <a href="naslovna.html">Naslovna</a>
-  <a href="statistika.html">Statistika</a>
-  <a href="linkovi.html">Linkovi</a>
-  <a href="kontakt.html">Kontakt</a>
-</div>
-
-<form>
-	Ime:<br>
-	<input type="text" name="ime" size="25">
-	<br>
-	Prezime:<br>
-	<input type="text" name="prezime" size="25">
-	<br>
-	Email:<br>
-	<input type="text" name="email" size="25">
-	<br>
-	Vaša poruka:<br>
-	<textarea name="poruka" rows="6" cols="40"></textarea>
-	<br>
-	<input type="submit" value="Pošalji email"/>
-	<br>
-</form>
-
-<!-- Podnozje -->
-<div class="podnozje">
-<p>Copyright © Ilma Kurtović</p>
-</div>
-
+    <!-- Logo i naziv -->
+    <div class="zaglavlje">
+        <img src="slike/logo.png" alt="logo" />
+        <h1>Policijska stanica KS</h1>
+    </div>
+    <!-- Navigacioni meni -->
+    <div class="navigacija">
+        <a href="naslovna.html">Naslovna</a>
+        <a href="statistika.html">Statistika</a>
+        <a href="linkovi.html">Linkovi</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <form name="contactForm">
+        <div>
+            Ime: *
+            <br>
+            <input type="text" name="ime" size="25" class="required">
+        </div>
+        <div>
+            Prezime:
+            <br>
+            <input type="text" name="prezime" size="25">
+        </div>
+        <div>
+            Email: *
+            <br>
+            <input types="email" name="email" size="25" class="required">
+        </div>
+        <br>
+        <div>
+            Vaša poruka: *
+            <br>
+            <textarea name="poruka" rows="6" cols="40" class="required"></textarea>
+        </div>
+		<div>
+            Polja označena zvjezdicom (*) su obavezna. 
+        </div>
+        <br>
+        <input name="submit" type="submit" value="Pošalji email" />
+        <br>
+		
+    </form>
+    <!-- Podnozje -->
+    <div class="podnozje">
+        <p>Copyright © Ilma Kurtović</p>
+    </div>
+    <!-- Script  -->
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
