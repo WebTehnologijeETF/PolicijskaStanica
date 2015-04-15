@@ -89,3 +89,12 @@ td{
 	text-align:center;				/* poravnanje teskta u td tag-u */
 	padding: 5px;					/* top i bottom razmak u td tag-u kome se nalaze podaci */
 	}
+
+ .error {
+    background-color: rgb(255, 175, 175);
+    color: gray;
+  }
+
+  .errorLabel {
+    color: rgb(200, 8, 8);
+  }
