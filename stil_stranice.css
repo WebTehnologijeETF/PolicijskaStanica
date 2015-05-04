@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css');
+
 .zaglavlje {
 	font-family: Arial;
     background-color:#0066CC;
@@ -98,3 +100,24 @@ td{
   .errorLabel {
     color: rgb(200, 8, 8);
   }
+  
+  
+span.tekst {
+	margin-bottom: -7px;
+	margin-left: 5px;
+	visibility: visible;
+	color: #d01500;
+}
+
+span.tekst_invisible {
+	margin-bottom: -7px;
+	margin-left: 5px;
+	visibility: hidden;
+	color: #d01500;
+}
+
+h2{
+font-family: 'Raleway', sans-serif;
+color: white;
+
+}
