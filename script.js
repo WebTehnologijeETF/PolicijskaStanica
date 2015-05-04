@@ -115,3 +115,55 @@ function showMenu(test, id) {
         x.style.display = "none";
     }
 }
+
+var mjestoValidirano = false;
+var stanje = 0;
+function ValidirajMjesto() {
+	var mjesto = document.getElementById("mjesto").value;
+	var opcina = document.getElementById("opcina");
+	var opcina_tekst = opcina.options[opcina.selectedIndex].text;
+	var rezultat;
+
+	var xmlhttp = new XMLHttpRequest();
+	stanje = 1;    
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            rezultat = xmlhttp.responseText;
+            if(rezultat.indexOf("greska") > -1) {
+			
+				document.getElementById("tekst_mjesto").className="tekst";
+				mjestoValidirano = false;
+				console.log('radi');
+				return false;
+			}
+			else {
+			
+				document.getElementById("tekst_mjesto").className="tekst_invisible";
+				mjestoValidirano = true;
+				return true;
+			}
+        }
+        stanje = 2;
+    }
+    
+    xmlhttp.open('GET', 'http://zamger.etf.unsa.ba/wt/mjesto_opcina.php?opcina=' + opcina_tekst + '&mjesto=' + mjesto, true);
+    xmlhttp.send();
+}
+
+function ValidirajPrijavu() {
+	while (stanje != 2);
+	return (mjestoValidirano);
+}
+
+function otvori(stranica)
+{
+	var ajax = new XMLHttpRequest();
+	ajax.onreadystatechange=function(){
+		if(ajax.readyState == 4 && ajax.status == 200){			document.open();
+		document.write(ajax.responseText);
+		document.close();
+	    }
+    }
+ajax.open("GET", stranica, true);
+ajax.send();
+}
