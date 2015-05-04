@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<SCRIPT src="script.js"></SCRIPT>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stil_stranice.css">
+    <title>Policijska stanica</title>
+</head>
+
+<body>
+    <!-- Logo i naziv -->
+    <div class="zaglavlje">
+        <img src="slike/logo.png" alt="logo" />
+        <h1>Policijska stanica KS</h1>
+    </div>
+    <!-- Navigacioni meni -->
+    <div class="navigacija">
+        <a href="#" onclick="otvori(naslovna.html)">Naslovna</a>
+		<a href="#" onclick="otvori(statistika.html)">Statistika</a>
+		<a href="#" onclick="otvori(linkovi.html)">Linkovi</a>
+		<a href="#" onclick="otvori(kontakt.html)">Kontakt</a>
+		<a href="#" onclick="otvori(nadjinas.html)">Pronađi nas</a>
+    </div>
+ <form name="nadjinas">
+ <script src="script.js" type="text/javascript" charset="utf-8"></script>
+ <div>
+ <br>
+	<h2>Pronađi najbližu policijsku stanicu</h2>
+ </div>
+    <div>
+    Adresa: 
+		<br>
+			<input type="text" name="adresa" size="25" class="required">
+
+	</div>
+	
+	<br>
+	<div>
+	Opština: *
+		<br>
+			<select id="opcina">
+				<option value="Centar">Centar</option>
+				<option value="NoviGrad">Novi Grad</option>
+				<option value="StariGrad">Stari Grad</option>
+  				<option value="NovoSarajevo">Novo Sarajevo</option>
+				<option value="Ilidza">Ilidža</option>
+				<option value="Trnovo">Trnovo</option>
+				<option value="Ilijas">Ilijaš</option>
+				<option value="Vogosca">Vogošća</option>
+				<option value="Hadzici">Hadžici</option>		
+			</select>
+	</div>
+	<div>
+	Mjesto: *
+		<br>
+			<input type="text" name="mjesto" id="mjesto" onblur="ValidirajMjesto()">
+			<span id="tekst_mjesto" class="tekst_invisible">Greška!</span>
+	</div>
+		<br>
+		<input type="submit" value="Nađi nas" name="submit" id="submit" onclick="return ValidirajPrijavu()">
+</form>
+
+</body>
