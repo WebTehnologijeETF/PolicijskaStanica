@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+        <head>
+                
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                <title>Policijska stanica</title>
+                <meta name="description" content="">
+                <meta name="keywords" content="" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+
+                <link rel="stylesheet" href="static/css/main.css">
+        
+        </head>
+
+        <body>
+                
+            <!-- Logo i naziv zaglavlje-->
+            <div class="zaglavlje clearfix">
+                    <img class="logo" src="static/images/logo.png" alt="logo" />
+                    <h1 class="logo-text">Policijska stanica KS</h1>
+            </div>
+
+            <!-- Navigacioni meni -->
+            <div class="main-menu clearfix">
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" onclick="otvori('index.html')">Naslovna</a>
+                        </li>
+
+                        <li>
+                            <a class="sub" href="statistika.html" onclick="otvori('statistika.html')">Statistika</a>
+                            <ul class="clearfix">
+                                <li>
+                                    <a class="sub" href="#">Sub link #1</a>
+                                </li>
+
+                                <li>
+                                    <a class="sub" href="#">Sub link #2</a>
+                                </li>
+
+                                <li>
+                                    <a class="sub" href="#">Sub link #3</a>
+                                </li>
+
+                                <li>
+                                    <a class="sub" href="#">Sub link #4</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="linkovi.html" onclick="otvori('linkovi.html')">Linkovi</a>
+                        </li>
+
+                        <li>
+                            <a href="kontakt.html" onclick="otvori('kontakt.html')">Kontakt</a>
+                        </li>
+
+                        <li>
+                            <a href="nadjinas.html" onclick="otvori('nadjinas.html')">Pronađi nas</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="container clearfix">
+                <form id="contactForm" class="forms" name="contactForm">
+                    <div class="form-label">
+                        <label>Ime: *</label>
+                        <input class="required" name="ime" size="25" type="text">
+                    </div>
+
+                    <div class="form-label">
+                        <label>Prezime:</label>
+                        <input name="prezime" size="25" type="text">
+                    </div>
+
+                    <div class="form-label">
+                        <label>Email: *</label>
+                        <input class="required" name="email" size="25">
+                    </div>
+
+                    <div class="form-label">
+                        <label>Vaša poruka: *</label>
+                        <textarea class="required" cols="40" name="poruka" rows="6"></textarea>
+                    </div>
+
+                    <div class="form-label">
+                        <label>Polja označena zvjezdicom (*) su obavezna.</label>
+                        <input name="submit" type="submit" value="Pošalji email">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Podnozje -->
+            <div class="podnozje">
+                    <p>Copyright © Ilma Kurtović</p>
+            </div>
+
+
+            <script src="static/js/script.js" type="text/javascript"></script>
+
+            <script type="text/javascript">
+                posalji();
+            </script>
+
+        </body>
+
+</html>
