@@ -1,0 +1,404 @@
+/* CSS reset */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,button,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav,ul{list-style:none}
+blockquote,q{quotes:none} 
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none;}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+*:focus{outline: 0}
+input,select,textarea{box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box; margin: 0; padding: 0; border: none}
+
+/* CSS reset */
+
+/* latin */
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Raleway'), url(http://fonts.gstatic.com/s/raleway/v9/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color:#aec2ff;
+}
+
+body * {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+table, th, td {
+	font-family:arial;
+	border:1px solid #000;
+	width:70%;
+}
+
+th {
+	background-color:#06c;
+	color:#fff;
+	padding:15px;
+}
+
+td {
+	text-align:center;
+	padding:5px;
+}
+
+h1, h2 {
+	font-family: 'Raleway', sans-serif;
+}
+
+/* main menu */
+
+.main-menu {
+	width: 100%;
+	background: #004f9e;
+}
+
+#nav {
+	width: 410px;
+	margin: 0 auto;
+}
+
+#nav li a {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+
+#nav > a {
+	display: none;
+}
+
+#nav li {
+	position: relative;
+}
+	
+#nav li a {
+	display: block;
+}
+
+#nav li a span {
+	padding: 0 10px 0 0;
+}
+
+#nav span:after {
+	width: 0;
+	height: 0;
+	border-bottom: none;
+	content: '';
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	right: -0.5em;
+	border: 0.313em solid transparent;
+	border-top-color: #fff;
+	font-size: 14px;
+}
+
+#nav > ul > li {
+	float: left;
+}
+
+#nav > ul > li > a {
+	font-size: 16px;
+	padding: 25px 8px;
+}
+
+#nav li ul {
+	display: none;
+	position: absolute;
+	top: 90%;
+	background: rgba(0, 0, 0, .7);
+	min-width: 150px;
+}
+
+#nav li ul:before {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: -5px;
+	right: 10px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid rgba(0, 0, 0, .7);
+}
+
+#nav li:hover ul {
+	display: block;
+	right: 0;
+}
+
+#nav li:not( :first-child ):hover ul {}
+
+#nav li ul a {
+	font-size: 1em; 
+	padding: 0.75em; 
+}
+
+#nav li ul li a:hover, #nav li ul:not(:hover) li.active a {
+	background: rgba(0, 0, 0, .5);
+}
+
+/* layouts */
+
+.container {
+	width: 80%;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.logo {
+	margin: 0 0 20px;
+}
+
+.zaglavlje {
+	font-family: 'Raleway', sans-serif;
+	background-color:#06c;
+	color:#fff;
+	text-align:center;
+	padding:30px 0;
+}
+
+.zaglavlje .logo-text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	text-shadow: 0 0 20px #fff;
+}
+
+.navigacija {
+	font-family:arial;
+	font-size:25px;
+	font-style:italic;
+	background-color:#4791da;
+	text-align:center;
+	padding:5px;
+}
+
+.navigacija a {
+	color:#fff;
+}
+
+.navigacija a:hover {
+	background-color:#00c;
+}
+
+.novosti {
+    margin: 0 0 30px;
+
+    padding: 0 0 20px;
+    border-bottom: 1px solid #E5EAF9;
+}
+
+.novosti h1 {
+    font-size: 30px;
+
+    margin: 0 0 5px;
+}
+
+.novosti h2 {
+    color: #6767FF;
+
+    margin: 0 0 24px;
+}
+
+.novosti img {
+	width:180px;
+	height:140px;
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.novosti .more {
+	color: #06C;
+	margin: 12px 0 0;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.novosti p {
+	text-align:justify;
+	font-size:16px;
+	color:#000;
+	line-height: 19px;
+}
+
+.novosti.post-page {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.novosti.post-page img {
+	width:100%;
+	height:auto;
+	float: left;
+	margin: 0 0 30px;
+}
+
+.novosti.post-page p {
+	margin: 0 0 20px;
+}
+
+.podnozje {
+	background-color: #06c;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+.naslovtabele {
+	font-family:arial;
+	font-size:18px;
+	font-style:italic;
+	text-align:left;
+	padding:15px;
+}
+
+.ikona li {
+	background: url(../images/ikona.png) no-repeat top left;
+	padding: 8px 0 10px 40px;
+}
+
+.ikona a {
+	font-size:18px;
+	color: #006EFF;
+}
+
+.forms {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.forms .form-label {
+    float: left;
+    width: 100%;
+    margin: 0 0 16px;
+}
+
+.forms .form-label label {
+    width: 100%;
+    float: left;
+    margin: 0 0 10px;
+}
+
+.forms .form-label input {
+    padding: 5px;
+	
+    font-size: 15px;
+    width: 100%;
+}
+
+.forms .form-label select {
+	padding: 5px;
+	font-size: 15px;
+	width: 100%;
+}
+
+.forms .form-label textarea {
+    padding: 5px;    
+    font-size: 15px;    
+    width: 100%;
+}
+
+.maps-con {
+	width: 50%;
+	height: 300px;
+	margin: 30px auto 0;
+}
+
+.tables {
+	width: 100%;
+}
+
+.tables th, .tables td {
+	width: 20%;
+}
+
+.comments {
+	width: 100%;
+	float: left;
+}
+
+.comments .comment {
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #A4B7F0;
+	margin: 0 0 20px;
+}
+
+.comments .comment .date {
+	float: left;
+	margin: 0 10px 0 0;
+	font-size: 10px;
+}
+
+.comments .comment .user {
+	float: left;
+	color: #333;
+	width: 100%;
+	padding: 8px 0;
+	font-size: 20px;
+}
+
+.comments .comment p {
+	width: 100%;
+	float: left;
+}
+
+.error {
+	background-color:#ffafaf;
+	color:gray
+}
+
+.errorlabel {
+	color: #c80808;
+	width: 100%;
+	display: block;
+	float: left;
+	margin: 10px 0 0;
+}
+
+span.tekst {
+	margin-bottom:-7px;
+	margin-left:5px;
+	visibility:visible;
+	color:#d01500;
+}
+
+span.tekst_invisible {
+	margin-bottom:-7px;
+	margin-left:5px;
+	visibility:hidden;
+	color:#d01500;
+}
+
